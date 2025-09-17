@@ -9,8 +9,8 @@ import org.mockito.junit.MockitoJUnitRunner
 import org.mockito.kotlin.mock
 
 
-private const val ERROR_EMAIL = "이메일 형식이 올바르지 않습니다"
-private const val ERROR_PASSWORD = "비밀번호는 6자리 이상이어야 합니다"
+private const val ERROR_EMAIL = "이메일 형식이 올바르지 않습니다."
+private const val ERROR_PASSWORD = "비밀번호는 6자리 이상이어야 합니다."
 
 @RunWith(MockitoJUnitRunner::class)
 class LoginValidatorErrorHandlingTest {
