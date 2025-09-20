@@ -14,7 +14,7 @@ android {
         versionCode = 1
         versionName = "1.0"
 
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner = "com.bossmg.android.unittestproject.MyApplicationTestRunner"
     }
 
     buildTypes {
@@ -55,4 +55,5 @@ dependencies {
     androidTestImplementation(libs.androidx.rules)
     androidTestImplementation(libs.mockito.core)
     androidTestImplementation(libs.mockito.kotlin)
+    androidTestImplementation(libs.androidx.espresso.idling.resource)
 }
