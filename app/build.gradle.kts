@@ -30,12 +30,21 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+
+    testOptions {
+        unitTests.isIncludeAndroidResources = true
+    }
 }
 
 dependencies {
 
+    implementation(libs.androidx.junit)
+    implementation(libs.androidx.activity)
+    implementation(libs.androidx.constraintlayout)
     testImplementation(libs.mockito.core)
     testImplementation(libs.mockito.kotlin)
+    testImplementation(libs.robolectric)
+    testImplementation(libs.androidx.espresso.core)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
@@ -43,4 +52,7 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    androidTestImplementation(libs.androidx.rules)
+    androidTestImplementation(libs.mockito.core)
+    androidTestImplementation(libs.mockito.kotlin)
 }

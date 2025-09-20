@@ -2,4 +2,7 @@
     <string name="app_name">UnitTestProject</string>
     <string name="error_invalid_email">이메일 형식이 올바르지 않습니다.</string>
     <string name="error_short_password">비밀번호는 6자리 이상이어야 합니다.</string>
+    <string name="the_factorial_of_is">%1$d의 팩토리얼은 %2$s입니다</string>
+    <string name="error_invalid_number">잘못된 숫자입니다.</string>
+    <string name="calculate">계산</string>
 </resources>
