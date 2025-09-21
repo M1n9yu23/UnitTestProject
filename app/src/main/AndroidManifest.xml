@@ -17,10 +17,10 @@
             android:exported="false" />
 
         <activity
-            android:name=".uitest.Activity1"
+            android:name=".uitest.InputActivity"
             android:exported="false" />
         <activity
-            android:name=".uitest.Activity2"
+            android:name=".uitest.ResultActivity"
             android:exported="false" />
 
     </application>

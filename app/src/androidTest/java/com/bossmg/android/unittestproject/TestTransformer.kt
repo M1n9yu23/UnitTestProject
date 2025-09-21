@@ -1,15 +1,15 @@
 package com.bossmg.android.unittestproject
 
 import androidx.test.espresso.idling.CountingIdlingResource
-import com.bossmg.android.unittestproject.uitest.Synchronizer
+import com.bossmg.android.unittestproject.uitest.Transformer
 
-class TestSynchronizer(
-    private val synchronizer: Synchronizer,
+class TestTransformer(
+    private val transformer: Transformer,
     private val countingIdlingResource: CountingIdlingResource
-): Synchronizer {
-    override fun executeAfterDelay(callback: (Int) -> Unit) {
+) : Transformer {
+    override fun transform(input: String, callback: (String) -> Unit) {
         countingIdlingResource.increment()
-        synchronizer.executeAfterDelay {
+        transformer.transform(input) {
             callback(it)
             countingIdlingResource.decrement()
         }

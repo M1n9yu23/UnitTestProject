@@ -1,18 +1,12 @@
 package com.bossmg.android.unittestproject
 
 import androidx.test.espresso.idling.CountingIdlingResource
-import com.bossmg.android.unittestproject.uitest.Randomizer
-import com.bossmg.android.unittestproject.uitest.Synchronizer
-import java.util.Random
+import com.bossmg.android.unittestproject.uitest.Transformer
 
 class TestMyApplication : MyApplication() {
-    val countingIdlingResource = CountingIdlingResource("Timer resource")
+    val countingIdlingResource = CountingIdlingResource("StringTransform resource")
 
-    override fun createSynchronizer(): Synchronizer {
-        return TestSynchronizer(super.createSynchronizer(), countingIdlingResource)
-    }
+    override fun createTransformer(): Transformer =
+        TestTransformer(super.createTransformer(), countingIdlingResource)
 
-    override fun createRandomizer(): Randomizer {
-        return TestRandomizer(Random())
-    }
 }

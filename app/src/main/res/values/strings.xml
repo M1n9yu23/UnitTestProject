@@ -5,6 +5,7 @@
     <string name="the_factorial_of_is">%1$d의 팩토리얼은 %2$s입니다</string>
     <string name="error_invalid_number">잘못된 숫자입니다.</string>
     <string name="calculate">계산</string>
-    <string name="press_me">눌러주세요</string>
-    <string name="opened_after_x_seconds">%d 초 이후에 열렸습니다</string>
+    <string name="transform_text">Transform Text</string>
+    <string name="enter_text">Enter text</string>
+    <string name="result">Result: %1$s</string>
 </resources>
