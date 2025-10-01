@@ -17,7 +17,7 @@ import org.junit.runner.RunWith
 class MainActivityTest {
 
     @Test
-    fun `show sum result in text view`() {
+    fun `팩토리얼 결과를 텍스트뷰에 표시`() {
         val scenario = launch(MainActivity::class.java)
 
         scenario.moveToState(Lifecycle.State.RESUMED)
@@ -40,7 +40,7 @@ class MainActivityTest {
     }
 
     @Test
-    fun `show error in text view`() {
+    fun `잘못된 입력 시 에러 메시지를 표시`() {
         val scenario = launch(MainActivity::class.java)
 
         scenario.moveToState(Lifecycle.State.RESUMED)
